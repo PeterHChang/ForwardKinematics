@@ -13,7 +13,7 @@ Bone_Animation::~Bone_Animation()
 
 void Bone_Animation::init()
 {
-    root_position = { 2.0f,0.5f,2.0f };
+    root_position = { 2.0f,1.0f,2.0f };
 
     scale_vector =
     {
@@ -26,9 +26,9 @@ void Bone_Animation::init()
     rotation_degree_vector =
     {
         {0.0f,0.0f,0.0f},
-        {0.0f,30.0f,0.0f},
-        {0.0f,30.0f,0.0f},
-        {0.0f,30.0f,0.0f}
+        {0.0f,0.0f,0.0f},
+        {0.0f,0.0f,0.0f},
+        {0.0f,0.0f,0.0f}
     };
 
     colors =
@@ -120,9 +120,9 @@ void Bone_Animation::reset()
     rotation_degree_vector =
     {
         {0.0f,0.0f,0.0f},
-        {0.0f,30.0f,0.0f},
-        {0.0f,30.0f,0.0f},
-        {0.0f,30.0f,0.0f}
+        {0.0f,0.0f,0.0f},
+        {0.0f,0.0f,0.0f},
+        {0.0f,0.0f,0.0f}
     };
 
     bone_mat = { glm::mat4(1.0f), glm::mat4(1.0f), glm::mat4(1.0f), glm::mat4(1.0f) };
