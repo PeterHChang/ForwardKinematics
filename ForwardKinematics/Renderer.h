@@ -35,7 +35,7 @@ public:
 
 	std::vector<Object> obj_list;
 
-	glm::vec4 background_color = glm::vec4(0.1,0.1,0.1,0.1);
+	glm::vec4 background_color = glm::vec4(0.1, 0.1, 0.1, 0.1);
 
 	bool is_scene_reset = true;
 
@@ -67,9 +67,9 @@ public:
 	void draw_plane(Shader& shader);
 	void draw_bones(Shader& shader, Bone_Animation* m_bone_animation);
 
-	void bind_vaovbo(Object &cur_obj);
+	void bind_vaovbo(Object& cur_obj);
 
 	void setup_uniform_values(Shader& shader);
 	void scene_reset();
-};
 
+};
