@@ -49,20 +49,6 @@ void Renderer::nanogui_init(GLFWwindow* window)
 
 
 	gui_1->addGroup("Bone Rotation");
-	/*
-	bone1_X = gui_1->addVariable("Rotate X1:", m_bone_animation->rotation_degree_vector[1][2]);
-	bone1_Y = gui_1->addVariable("Rotate Y1:", m_bone_animation->rotation_degree_vector[1][0]);
-	bone1_Z = gui_1->addVariable("Rotate Z1:", m_bone_animation->rotation_degree_vector[1][1]);
-
-	bone2_X = gui_1->addVariable("Rotate X2:", m_bone_animation->rotation_degree_vector[2][2]);
-	bone2_Y = gui_1->addVariable("Rotate Y2:", m_bone_animation->rotation_degree_vector[2][0]);
-	bone2_Z = gui_1->addVariable("Rotate Z2:", m_bone_animation->rotation_degree_vector[2][1]);
-
-	bone3_X = gui_1->addVariable("Rotate X3:", m_bone_animation->rotation_degree_vector[3][2]);
-	bone3_Y = gui_1->addVariable("Rotate Y3:", m_bone_animation->rotation_degree_vector[3][0]);
-	bone3_Z = gui_1->addVariable("Rotate Z3:", m_bone_animation->rotation_degree_vector[3][1]);
-	*/
-
 	
 	gui_1->addVariable("Rotate X1:", m_bone_animation->rotation_degree_vector[1][2]);
 	gui_1->addVariable("Rotate Y1:", m_bone_animation->rotation_degree_vector[1][0]);
@@ -79,19 +65,6 @@ void Renderer::nanogui_init(GLFWwindow* window)
 
 	gui_1->addButton("Reset Bone Rotation", []() {
 		m_bone_animation->reset();
-		/*
-		bone1_X->setValue(m_bone_animation->rotation_degree_vector[1][2]);
-		bone1_Y->setValue(m_bone_animation->rotation_degree_vector[1][0]);
-		bone1_Z->setValue(m_bone_animation->rotation_degree_vector[1][1]);
-
-		bone2_X->setValue(m_bone_animation->rotation_degree_vector[2][2]);
-		bone2_Y->setValue(m_bone_animation->rotation_degree_vector[2][0]);
-		bone2_Z->setValue(m_bone_animation->rotation_degree_vector[2][1]);
-
-		bone3_X->setValue(m_bone_animation->rotation_degree_vector[3][2]);
-		bone3_Y->setValue(m_bone_animation->rotation_degree_vector[3][0]);
-		bone3_Z->setValue(m_bone_animation->rotation_degree_vector[3][1]);
-		*/
 		});
 
 	m_nanogui_screen->setVisible(true);
